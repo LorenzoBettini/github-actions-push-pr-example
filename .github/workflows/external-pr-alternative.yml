@@ -1,6 +1,6 @@
 # This workflow will build a Java project with Maven
 
-name: Java CI with Maven in Linux
+name: External PR (Alternative)
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: not github.repository == 'LorenzoBettini/github-actions-push-pr-example'
+    if: github.repository != 'LorenzoBettini/github-actions-push-pr-example'
 
     steps:
     - uses: actions/checkout@v2
