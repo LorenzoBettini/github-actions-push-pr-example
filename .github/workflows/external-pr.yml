@@ -14,8 +14,8 @@ env:
 
 jobs:
   build:
-    if: ${{ env.BASE_REPO != env.PR_HEAD_REPO }}
     runs-on: ubuntu-latest
+    if: ${{ env.BASE_REPO != env.PR_HEAD_REPO }}
 
     steps:
     - uses: actions/checkout@v2
