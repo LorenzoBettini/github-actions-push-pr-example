@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: not (github.repository == 'LorenzoBettini/github-actions-push-pr-example')
+    if: not github.repository == 'LorenzoBettini/github-actions-push-pr-example'
 
     steps:
     - uses: actions/checkout@v2
